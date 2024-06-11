@@ -1,6 +1,6 @@
-**F18 - Galatic Exploration**
+## F18 - Galatic Exploration
 
-**Contexte général**  
+### Contexte général
 L'entreprise GalacticExploration envoie régulièrement des modules de ravitaillement à ses stations spatiales.
 
 Les modules sont transportés et livrés dans des conteneurs spatiaux pouvant accueillir au maximum 8 modules.
@@ -18,7 +18,7 @@ Commencez par lire cette consigne avec grande attention et prenez garde :
 - Faites les points mentionnés avec précision et dans l'ordre indiqué.
 - Revérifiez bien ensuite avoir fait ce qui est demandé.
 
-**CONSIGNE**
+### CONSIGNE
 
 **Modules**  
 Dans le package `models`, créez une classe nommée `Module`. Un `Module` aura les caractéristiques suivantes : `nom` (genre "Oxygène", "Nourriture", "Pièces détachées"), `prix` (genre 5000.00), `poids` (pour son poids en kilogrammes), `volume` (en mètres cubes), et `état` (pour savoir si celui-ci est en bon état ou endommagé).
@@ -120,7 +120,7 @@ Voici la transformation de l'information en tableau:
 |         |                             | 2x 'Oxygène' de 2.5m³ à 5000.00 Crédits |                                       |                                       |
 |         |                             | 1x 'Nourriture' de 1.0m³ à 3000.00 Crédits |                                       |                                       |
 
-**Résultat sur la console**
+### Résultat sur la console
 
 Si vous avez correctement réalisé cette application vous devriez obtenir un affichage ressemblant à ceci :
 
@@ -135,9 +135,17 @@ La mission contient 1 conteneur
 Le prix total de la mission est de 8'000.00 Crédits
 ```
 
+## Fonctionnalités supplémentaires
+Une fois tout ce qui précède réalisé et fonctionnel, ajoutiez ces capacités à vos classes ´Mission´ et ´Conteneur´:
 
+### Conteneur :
+- **Obtenir le nombre de modules d'une taille précise** : on doit pouvoir demander à un conteneur le nombre de modules d'une taille précise en m³. Si aucun conteneur n'est trouvé avec cette taille, on obtiendra -1.
+- **Calcul du volume globale** : on doit pouvoir demander à un conteneur le volume globale en m³. On obtiendra le volume globale du conteneur.
 
-**RESTITUTION** 
+### Mission
+- **Calcul le prix moyen des conteneurs livrés** : on doit pouvoir demander à une Mission la coût moyen d'un conteneur. On obtiendra le coût en crédit.
+- **Supprimer les modules d'un certains types** : on doit pouvoir demander à une Mission de supprimer les modules contenant par exemple de l'"Oxygène". On obtiendra le nombre de module supprimé.
+
+## RESTITUTION
 Rendez votre travail par push GitHub.  
 
----
